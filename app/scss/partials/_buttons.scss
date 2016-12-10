@@ -1,0 +1,32 @@
+.button-buy {
+  font-family: $open-sans;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2E2E2E;
+  letter-spacing: 2px;
+  padding: 22px 52px;
+  background-color: #FFFFFF;
+  &:hover {
+    text-decoration: none;
+    color: #2E2E2E;
+  }
+}
+
+.news,
+.content-1-box {
+  .button-buy {
+    color: #FFFFFF;
+    background-color: #E9A513;
+    &:hover {
+      background-color: #E9A513;
+      color: #FFFFFF;
+    }
+  }
+}
+
+.content-1-box {
+  .button-buy {
+    display: inline-block;
+    
+  }
+}

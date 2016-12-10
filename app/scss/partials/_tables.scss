@@ -1,0 +1,144 @@
+
+
+table {
+  margin: 0 auto;
+  background-color : #FFFFFF;
+  box-shadow: 0px 2px 40px 0px rgba(0,0,0,0.10);
+  width: 100%;
+}
+
+
+
+th {
+  text-align: center;
+}
+
+tr.features {
+  th {
+    text-align: center;
+    border: 1px solid #E9E9E9;
+    padding: 65px 40px;
+    &:nth-child(1) {
+      width: 50%;
+      border: 1px solid #E9E9E9;
+      border-left: none;
+      padding: 20px 38px 20px 40px;
+      text-align: left;
+    }
+  }
+}
+
+.table-wrapper .features-header {
+  background-color: #3BA1B5;
+  th {
+      font-family: $open-sans;
+      border-right: 1px solid #E9E9E9;
+      font-size: 16px;
+      color: #FFFFFF;
+      text-transform: uppercase;
+    &:nth-child(1) {
+      padding: 40px 50px 40px 40px;
+      text-align: left;
+      font-family: $open-sans;
+      font-weight: 600;
+      font-size: 22px;
+      color: #FFFFFF;
+      letter-spacing: 0px;
+      text-transform: uppercase;
+    }
+  }
+}
+
+
+
+.table-row-top {
+  background-color: #3BA1B5;
+  .features-main{
+    font-family: $open-sans;
+    font-weight: 400;
+    font-size: 22px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    padding: 40px;
+  }
+  .feature-choices {
+    font-family: $open-sans;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    padding: 44px 20px;
+  }
+}
+
+
+
+td {
+  text-align: center !important;
+  border: 1px solid #E9E9E9;
+  &:nth-child(1) {
+    text-align: left !important;
+    padding: 20px 40px;
+  }
+}
+
+.ft-head-inner {
+  padding: 20px;
+  @include mq(mobile-only) {
+    margin-top: 20px;
+  }
+}
+
+.ft-head-inner span {
+  @include mq(mobile-only) {
+    line-height: 2;
+  }
+}
+
+.ft-head-inner-p {
+  padding: 20px;
+}
+
+.ft-head-inner-upper {
+  padding: 20px;
+  font-family: $open-sans;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #3BA1B5;
+  letter-spacing: 0px;
+  @include mq(mobile-only) {
+    margin-left: 35px;
+  }
+}
+
+
+@include mq(mobile-only) {
+.tablesaw-cell-content {
+    max-width: 100% !important;
+    display: inline-block !important;
+  }
+}
+
+.tablesaw-cell-label {
+  @include mq(mobile-only) {
+    vertical-align: middle !important;
+  }
+}
+
+.features-main{
+  @include mq(mobile-only) {
+    text-align: center;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
+
+}
+
+.no-image {
+  .tablesaw-cell-label {
+    margin-right: 40px;
+  }
+}
+
+

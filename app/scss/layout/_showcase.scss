@@ -1,0 +1,78 @@
+.map-wrap {
+  .container {
+    text-align: center;
+  }
+  .left-box-wrap {
+    background: #FFFFFF;
+    background-image: url(../img/costa-rica-map.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 22px 50px 10px rgba(0,0,0,0.12);
+    padding: 28px 30px 20px 30px;
+    text-align: center;
+    display: inline-block;
+    background-color: #FFFFFF;
+    position: relative;
+    top: -119px;
+    left: 0;
+    @include mq(mobile-only) {
+      display: block;
+    }
+    @include mq(tablet-up) {
+      left: 5px;
+    }
+    @include mq(desktop-up) {
+      padding: 28px 90px 20px 90px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      @include mq(mobile-only) {
+        font-size: 22px;
+      }
+    }
+    h5 {
+      margin-bottom: 10px
+    }
+  }
+  .right-box-wrap {
+    box-shadow: 0px 22px 50px 10px rgba(0,0,0,0.12);
+    padding: 50px 40px;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    top: -140px;
+    @include mq(mobile-only) {
+      top: -119px;
+      display: block;
+    }
+    @include mq(desktop-up) {
+      padding: 50px 90px;
+    }
+    h5 {
+      color: #FFFFFF;
+      margin-bottom: 40px;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: '';
+        opacity: 0.4;
+        border: 1px solid #FFFFFF;
+        bottom: -10px;
+        width: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+    h1 {
+      margin-bottom: 34px;
+      span {
+        font-size: 26px;
+      }
+    }
+    background-image:url(../img/orange-bg.png);
+    background-size: cover;
+  }
+}

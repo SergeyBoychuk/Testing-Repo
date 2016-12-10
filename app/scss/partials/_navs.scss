@@ -1,0 +1,116 @@
+.navbar {
+  margin-bottom: 0;
+}
+
+.top-nav {
+  padding-top: 15px;
+  text-align: center;
+    .contact-info {
+      display: inline-block;
+      @include mq(tablet-up) {
+        float: left;
+        display: block;
+      }
+    }
+    .location-info {
+      display: inline-block;
+      position: relative;
+      @include mq(tablet-up) {
+        float: right;
+        display: block;
+      }
+      &:after {
+        position: absolute;
+        content: '';
+        background-image: url(../img/location-img.svg);
+        background-repeat: no-repeat;
+        height: 10px;
+        width: 8px;
+        left: -15px;
+        bottom: 4px;
+        @include mq(mobile-only){
+          display: none;
+        }
+      }
+    }
+}
+
+.bottom-nav {
+  margin: 40px 0px;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      position: relative;
+      margin-top: 16px;
+      a {
+        font-family: $open-sans;
+        font-weight: 400;
+        font-size: 12px;
+        color: #2E2E2E;
+        letter-spacing: 0px;
+        text-decoration: none;
+        padding: 20px;
+        @include mq(mobile-only) {
+          padding: 5px;
+        }
+      }
+      .nav-logo {
+        font-family: $open-sans;
+        font-weight: 400;
+        font-size: 36px;
+        color: #2E2E2E;
+        letter-spacing: 0px;
+      }
+    }
+    .right-border {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: '';
+        border: 1px solid #BDBDBD;
+        height: 19px;
+        right: -30px;
+        @include mq(tablet-up) {
+          right: 0px;
+        }
+        @include mq(large-desktop-up) {
+          right: -50px;
+        }
+        @include mq(mobile-only) {
+          display: none;
+        }
+      }
+    }
+    .left-border {
+      position: relative;
+      &:after {
+        position: absolute;
+        content: '';
+        border: 1px solid #BDBDBD;
+        height: 19px;
+        left: -30px;
+        @include mq(tablet-up) {
+          left: 0px;
+        }
+        @include mq(large-desktop-up) {
+          left: -50px;
+        }
+        @include mq(mobile-only) {
+          display: none;
+        }
+      }
+    }
+    .nav-logo-wrap {
+      margin-top: 0;
+      @include mq(mobile-only) {
+        display: none;
+      }
+    }
+  }
+  .logo-bottom-text {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+}

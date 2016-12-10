@@ -1,0 +1,27 @@
+// nonactive tab
+.tab-content > .tab-pane {
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+// active tab
+.tab-content > .active {
+  height: auto;
+  overflow: auto;
+}
+
+.nav-tabs {
+  border-bottom: none;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus, 
+.nav-tabs>li.active>a:hover {
+  border : none;
+}
+
+a.selected {
+  color: red;
+}
+
